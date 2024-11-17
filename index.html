@@ -64,7 +64,16 @@
                       <h2 class="title is-3"> Acknowledgement </h2>
                       <div class="content has-text-justified">
                         <p> We would like to sincerely thank the reviewers for taking time out of their busy schedules to provide valuable and insightful feedback on our work. These suggestions are greatly appreciated. </p>
+                      </div>
+                      <h2 class="title is-3"> Preface </h2>
+                      <div class="content has-text-justified">
                         <p style="font-weight: bold;"> On this webpage, we will provide detailed answers to the reviewers' questions regarding APLDM. </p>
+                        <p>
+                          If necessary, the explanations and experiments in this page will be added to the paper.
+                        </p>
+                        <p>
+                          Let us use the notation from the paper of APLDM: let \( \boldsymbol{z}_t \) represent the latent representation at step \( t \), and \( \tilde{\boldsymbol{z}}_t = \text{PFSA}(\boldsymbol{z}_t) \). The default value of \( T_0 \) is set to 50.
+                        </p>
                       </div>
                   <!-- END acknowledgement -->
 
@@ -78,13 +87,6 @@
                     <span> Anonymous Github Page </span>
                   </a>
                 </span>
-                <div class="content has-text-justified">
-                  <p>
-                    <b>
-                    Let us use the notation from the paper of APLDM: let \( \boldsymbol{z}_t \) represent the latent representation at step \( t \), and \( \tilde{\boldsymbol{z}}_t = \text{PFSA}(\boldsymbol{z}_t) \). The default value of \( T_0 \) is set to 50.
-                    </b>
-                  </p>
-                </div>
             </div>
           </div>
         </div>
@@ -140,9 +142,6 @@
         <p><i><b> (i) clustering effect: </b></i> it has the ability to cluster tokens into several categories. </p>
         <p><i><b> (ii) adjusting the variance and intensity across different frequency bands: </b></i> during the early and middle stages of denoising, PFSA amplifies the high-frequency signal intensity of the latent representation,
           and increases the variance, while in the later stages of denoising, it reduces the high-frequency signal intensity, and decreases the variance; </p>
-        <p>
-          Let us use the notation from the paper of APLDM: let \( \boldsymbol{z}_t \) represent the latent representation at step \( t \), and \( \tilde{\boldsymbol{z}}_t = \text{PFSA}(\boldsymbol{z}_t) \). The default value of \( T_0 \) is set to 50.
-        </p>
       </div>
 
       <h2 class="title is-4"> 2.1 PFSA Clusters Tokens of Latent Representations </h2>
