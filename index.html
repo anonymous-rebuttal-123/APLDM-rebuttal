@@ -130,7 +130,7 @@
       <h2 class="title is-3"> 2. How Does PFSA Work? </h2>
       <div class="content has-text-justified">
         <p> The role of PFSA is manifested in two aspects: </p>
-        <p><i><b> (i)clustering effect: </b></i> it has the ability to cluster tokens into several categories. </p>
+        <p><i><b> (i) clustering effect: </b></i> it has the ability to cluster tokens into several categories. </p>
         <p><i><b> (ii) adjusting the variance and intensity across different frequency bands: </b></i> during the early and middle stages of denoising, PFSA amplifies the high-frequency signal intensity of the latent representation,
           and increases the variance, while in the later stages of denoising, it reduces the high-frequency signal intensity, and decreases the variance; </p>
         <p>
@@ -141,7 +141,7 @@
       <h2 class="title is-4"> 2.1 PFSA Clusters Tokens of Latent Representations </h2>
       <p>
         To illustrate the clustering effect of PFSA, we calculated the deviation of tokens' mean (DTM) of the latent representation \( \boldsymbol{z}_t \) and \( \tilde{\boldsymbol{z}}_t \).
-        Specifically, let \( z_t \in \mathbb{R}^{h \times w \times c} \), and \( Z_t = \text{Flatten}(z_t) = [y_{t1}, \dots, y_{tN}] \in \mathbb{R}^{N \times c} \), where \( N = h \times w \). The DTM is computed as DTM = \( [\text{mean}(y_{ti}) - \text{mean}(Z_t) \, \text{for} \, i = 1, \dots, N] \).
+        Specifically, let \( z_t \in \mathbb{R}^{h \times w \times c} \), and \( Z_t = \text{Flatten}(z_t) = [y_{t1}, \dots, y_{tN}] \in \mathbb{R}^{N \times c} \), where \( N = h \times w \). The DTM is computed as DTM = \( [\text{mean}(y_{ti}) - \text{mean}(Z_t) \; \text{for} \; i = 1, \dots, N] \).
       </p>
       
       <h2 class="title is-4"> 2.2 PFSA Adjusts the Variance and High-Frequency Signal Intensity of Latent Representations </h2>
