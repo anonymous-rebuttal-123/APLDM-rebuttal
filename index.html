@@ -181,7 +181,7 @@
         <p> It can be observed that the effect of PFSA can be divided into three phases:
           (<b> i </b>) from \( t = 49 \) to \( t = 46 \), PFSA suppresses the high-frequency signals of the latent representation;
           (<b> ii </b>) from \( t = 45 \) to \( t = 29 \), PFSA amplifies the high-frequency signals of the latent representation;
-          and (<i><b> iii </b></i>) from \( t = 28 \) to \( t = 0 \), PFSA once again suppresses the high-frequency signals of the latent representation.
+          and (<b> iii </b>) from \( t = 28 \) to \( t = 0 \), PFSA once again suppresses the high-frequency signals of the latent representation.
         </p>
         <p>
           In the first phase, it is evident that PFSA significantly alters the frequency distribution of the latent representation, particularly the intensity distribution of low-frequency signals.
@@ -191,10 +191,11 @@
           The second phase is the main phase where Attentive Guidance takes effect. During this phase, PFSA amplifies the high-frequency components of the latent representation.
           We hypothesize that this is the reason Attentive Guidance enables the generated images to exhibit richer details and colors, as shown in Figures 6 and 7 of the paper.
         </p>
+        <p>
+          In the third phase, it can be observed that the curve becomes smooth at \( t = 29 \), at which point the low-frequency components of the latent representation have been largely stabilized.
+          Therefore, the effect of Attentive Guidance becomes limited at this stage, as shown in Figure 9 of the paper.
+        </p>
       </div>
-      
-      
-      
     </div>
   </div>
 </section>
