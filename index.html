@@ -223,12 +223,31 @@
       <h2 id="section3.1"><h2 class="title is-4"> 3.1 Comparison Experiments </h2></h2>
       <div class="content has-text-justified">
         <p> In this section, we use Stable Diffusion 2.1 (SD2.1) as the pre-trained model to compare APLDM with other models. Given that DemoFusion and AccDiffusion only have open-source code based on SDXL, we conducted comparisons with ScaleCrafter and UpsampleGuidance (UG). </p>
-        <p>  </p>
+        <p> Considering that SD2.1 is trained at the resolution of \( 512 \times 512 \), we conduct tests at four resolutions: \( 1536 \times 1536 \), \( 1024 \times 2048 \), \( 2048 \times 1024 \), and \( 2048 \times 2048 \). The results are shown in the table below: </p>
+        <figure style="text-align: center;">
+          <img src="static/images/carousel4.jpg" alt="frequency_analysis_1" style="max-width: 40%; height: auto;">
+        </figure>
+        <p> As shown in the table above, APLDM still demonstrates superior performance on SD2.1. From the qualitative comparison in the figure below, it is evident that the images synthesized by APLDM exhibit better structural consistency. </p>
+        <figure style="text-align: center;">
+          <img src="static/images/carousel4.jpg" alt="frequency_analysis_1" style="max-width: 70%; height: auto;">
+        </figure>
       </div>
     </div>
   </div>
 </section>
 <!-- End Question 3 -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
