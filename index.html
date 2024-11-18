@@ -98,9 +98,10 @@
                         <p style="font-size: 16px; text-indent: 2em;"><a href="#section2.1"> 2.1 PFSA Clusters Tokens of Latent Representations </a></p>
                         <p style="font-size: 16px; text-indent: 2em;"><a href="#section2.2"> 2.2 PFSA Adjusts the Variance and High-Frequency Signal Intensity of Latent Representations </a></p>
                       <p style="font-size: 24px;"><a href="#section3"> 3. Comparison with HiDiffusion & SDXL+BSRGAN </a></p>
-                      <p style="font-size: 24px;"><a href="#section4"> 4. Comparison & Ablation Experiments Based on StableDiffusion2.1 </a></p>
-                        <p style="font-size: 16px; text-indent: 2em;"><a href="#section4.1"> 4.1 Comparison Experiments </a></p>
-                        <p style="font-size: 16px; text-indent: 2em;"><a href="#section4.2"> 4.2 Ablation Experiments </a></p>
+                      <p style="font-size: 24px;"><a href="#section4"> 4. Attentive Guidance is Effective in Other Generation Frameworks </a></p>
+                      <p style="font-size: 24px;"><a href="#section5"> 5. Comparison & Ablation Experiments Based on StableDiffusion2.1 </a></p>
+                        <p style="font-size: 16px; text-indent: 2em;"><a href="#section5.1"> 5.1 Comparison Experiments </a></p>
+                        <p style="font-size: 16px; text-indent: 2em;"><a href="#section5.2"> 5.2 Ablation Experiments </a></p>
                   </div>
                   <!-- END catalogue -->
             </div>
@@ -222,6 +223,7 @@
   <div class="hero-body">
     <div class="container">
       <h2 id="section3"><h2 class="title is-3"> 3. Comparison with HiDiffusion & SDXL+BSRGAN </h2></h2>
+      <p> In this section, we use SDXL as the pre-trained model to compare APLDM with HiDiffusion and SDXL+BSRGAN (where SDXL generates low-resolution images, followed by BSRGAN for super-resolution). </p>
       
     </div>
   </div>
@@ -230,14 +232,27 @@
 
 
 <!-- Question 4 -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 id="section4"><h2 class="title is-3"> 4. Attentive Guidance is Effective in Other Generation Frameworks </h2></h2>
+      <p>  </p>
+      
+    </div>
+  </div>
+</section>
+<!-- End Question 4 -->
+
+
+<!-- Question 5 -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 id="section4"><h2 class="title is-3"> 4. Comparison & Ablation Experiments Based on StableDiffusion2.1 </h2></h2>
+      <h2 id="section5"><h2 class="title is-3"> 5. Comparison & Ablation Experiments Based on StableDiffusion2.1 </h2></h2>
       <div class="content has-text-justified">
         <p> In this section, we analyze APLDM based on Stable Diffusion 2.1 (SD2.1). </p>
       </div>
-      <h2 id="section4.1"><h2 class="title is-4"> 4.1 Comparison Experiments </h2></h2>
+      <h2 id="section5.1"><h2 class="title is-4"> 5.1 Comparison Experiments </h2></h2>
       <div class="content has-text-justified">
         <p> In this section, considering that DemoFusion and AccDiffusion only have open-source code based on SDXL, we conducted comparisons with ScaleCrafter and UpsampleGuidance (UG). </p>
         <p> Considering that SD2.1 is trained at the resolution of \( 512 \times 512 \), we conduct tests at four resolutions: \( 1536 \times 1536 \), \( 1024 \times 2048 \), \( 2048 \times 1024 \), and \( 2048 \times 2048 \). The results are shown in the table below: </p>
@@ -251,7 +266,7 @@
         </figure>
       </div>
       
-      <h2 id="section4.2"><h2 class="title is-4"> 4.2 Ablation Experiments </h2></h2>
+      <h2 id="section5.2"><h2 class="title is-4"> 5.2 Ablation Experiments </h2></h2>
       <div class="content has-text-justified">
         <p> In this section, we conduct an ablation study on Attentive Guidance using SD2.1 as the pre-trained model. </p>
         <p> The quantitative ablation analysis results of Attentive Guidance are shown in Table B. As can be seen from the table, even when using SD2.1 as the pre-trained model, Attentive Guidance still improves the quality of the generated images, demonstrating its generalization ability. </p>
@@ -266,7 +281,7 @@
     </div>
   </div>
 </section>
-<!-- End Question 4 -->
+<!-- End Question 5 -->
 
 
 
