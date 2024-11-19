@@ -120,16 +120,24 @@
       <h2 id="section1"><h2 class="title is-3"> 1. Displaying Intermediate Generation Results of APLDM </h2></h2>
       <div class="content has-text-justified">
         <p> In this section, we use SDXL as the pre-trained model, and present the intermediate results of each stage in the process of generating high-resolution images with APLDM, as shown below: </p>
-        <figure style="text-align: center;">
-          <img src="static/images/carousel4.jpg" alt="" style="max-width: 70%; height: auto;">
-          <figcaption style="font-size: 0.9em; color: gray;">
-            <b> Figure 1-1 </b>: The image resolution is <b> 3072 × 3072 </b>.
-            <br>
-            <b> Prompt </b>: A Renaissance noblewoman, portrayed in an elegant gown with intricate embroidery. Her expression is thoughtful, and her eyes are deep and insightful. The background is a lush Italian garden, reflecting the artistic style of the High Renaissance.
-            <br>
-            <b> Prompt </b>: A giant sea turtle gliding through a coral reef, surrounded by colorful fish and vibrant corals, sunlight filtering through the water, ultra-detailed, realistic, cinematic wide-angle shot, serene and peaceful, inspired by the works of Wyland, 8k resolution.
-          </figcaption>
-        </figure>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <figure style="text-align: center;">
+              <img src="static/images/carousel4.jpg" alt="" style="max-width: 70%; height: auto;">
+              <figcaption style="font-size: 0.9em; color: gray;">
+                <b> Figure 1-1 </b>: The image resolution is <b> 3072 × 3072 </b>.
+                <br>
+                <b> Prompt </b>: A Renaissance noblewoman, portrayed in an elegant gown with intricate embroidery. Her expression is thoughtful, and her eyes are deep and insightful. The background is a lush Italian garden, reflecting the artistic style of the High Renaissance.
+                <br>
+                <b> Prompt </b>: A giant sea turtle gliding through a coral reef, surrounded by colorful fish and vibrant corals, sunlight filtering through the water, ultra-detailed, realistic, cinematic wide-angle shot, serene and peaceful, inspired by the works of Wyland, 8k resolution.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered"> Second image description. </h2>
+          </div>
+        </div>
         <p> As shown in Figures 1-1 and 1-2, the images generated at each stage of APLDM exhibit a high degree of consistency, with only minor differences in some details.
           Given that our goal is to address the generation of high-resolution images rather than traditional super-resolution tasks, the presence of these small differences is reasonable. </p>
       </div>
